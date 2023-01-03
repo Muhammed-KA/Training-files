@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    background-image:url('C:\Users\muhammed.ka\Desktop\html\CBS\carbackground1.jpg');
+    
+    }
+    header{
+    min-height: 70px;
+    background-color: #2f2f2f;
+    position: sticky;
+    top: 0;
+    padding: 0 20px;
+    color: white;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 5px 5px #989898;
+    }
+    .logo{
+    font-size: 1.4em;
+    }
+    #main-nav{
+    margin-left: auto;
+    /*margin-right: auto;*/
+    }
+    #main-nav>a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    margin-right: 10px;
+    }
+    .login{
+    background-color: dodgerblue;
+    padding: 8px;
+    border-radius: 5px;
+    }
+    #main-nav a:hover{background-color: #989898;font-size: 1.2em;}
+    #mobile-nav a:hover{background-color: #989898;font-size: 1.09em;}
+    
+    #mobile-nav{
+    display: none;
+    }
+    
+    #mobile-nav a{
+    color: rgb(222, 199, 199);
+    text-decoration: none;
+    display: block;
+    }
+    .signup{
+        background-color: rgb(21, 25, 28);
+        padding: 8px;
+        border-radius: 5px;
+        color: white;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-decoration: none;
+        margin: 20px;
+        }
+    .signup:hover{
+        color: rgb(118, 161, 133);
+        opacity: 80%;
+        font-size: 1.02em;
+    }
+    #mobile{
+        display: none;
+
+    }
+    #main{
+        display: flex;
+        width: 50%;
+    }
+    @media screen and (max-width: 600px){
+    #main-nav{
+    display: none;
+    }
+    #main{
+        display: none;
+ 
+    }
+    #mobile-nav{
+    display: block;
+    }
+    #mobile-nav a{
+    padding: 10px 5px;
+    border-bottom: 1px solid rgb(37, 31, 31);
+    }
+    header{
+    flex-direction: column;
+    align-items: initial;
+    }
+    .logo{
+    margin: 25px 0;
+    }
+    #mobile-nav{
+    padding-bottom: 10px;
+    }
+    #mobile{
+        display: block;
+        margin-left: 50px;
+
+    }
+    }
