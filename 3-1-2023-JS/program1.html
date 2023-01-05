@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="content"></tbody>
+    </table>
+    <script>
+        const users = [
+            {
+                name: 'user1',
+                email: 'user1@email.com'
+            },
+            {
+                name: 'user2',
+                email: 'user2@email.com'
+            },
+            {
+                name: 'user3',
+                email: 'user3@email.com'
+            },
+            {
+                name: 'user4',
+                email: 'user4@email.com'
+            }
+        ];
+        const target = document.getElementById('content');
+        users.forEach(user => {
+            const row = `<tr>
+                            <td>${user.name}</td>
+                            <td>${user.email}</td>
+                            <td>
+                                <button onclick="del(event)">Delete</button>
+                            </td>
+                         </tr>`;
+            target.innerHTML += row;
+        });
+        function del(event) {
+            let alert = confirm("do you want to delete");
+            if (alert = true) {
+                event.target.parentElement.parentElement.style.display ="none"
+            }
+        }
+    </script>
+</body>
+
+</html>
+<!-- const data = {"name":"Mr. X","age":18,"mark1":8,"mark2":10};
+const student = {"name":"Mr. X","age":18,"mark1":8,"mark2":10}; -->
